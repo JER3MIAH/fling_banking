@@ -104,14 +104,16 @@ class OnboardingWidget extends StatelessWidget {
               onbIndex == 3
                   ? AppButton(
                       title: 'Get started',
-                      onTap: () {},
+                      onTap: () {
+                        AppNavigator.pushNamed(AuthRoutes.login);
+                      },
                     )
                   : Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         BounceInAnimation(
                           onTap: () {
-                            // TODO: Push replace to login screen
+                            AppNavigator.replaceNamed(AuthRoutes.login);
                           },
                           child: Text(
                             'Skip',
