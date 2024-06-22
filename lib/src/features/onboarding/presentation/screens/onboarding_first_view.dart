@@ -1,11 +1,32 @@
 import 'package:fling_banking/src/shared/shared.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 
-class OnboardingFirstView extends StatelessWidget {
+class OnboardingFirstView extends HookWidget {
   const OnboardingFirstView({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final svgOpacity = useState<double>(0);
+    final txtOpacity = useState<double>(0);
+    final buttonOpacity = useState<double>(0);
+    const oneSec = Duration(seconds: 1);
+
+    void startAnimation() async {
+      await Future.delayed(const Duration(milliseconds: 500));
+      svgOpacity.value = 1.0;
+      await Future.delayed(const Duration(milliseconds: 1500));
+      txtOpacity.value = 1.0;
+      await Future.delayed(const Duration(milliseconds: 1500));
+      buttonOpacity.value = 1.0;
+    }
+
+    useEffect(() {
+      startAnimation();
+      return null;
+    }, const []);
     return Scaffold(
       backgroundColor: appColors.black,
       body: Stack(
@@ -17,48 +38,60 @@ class OnboardingFirstView extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                SvgAsset(assetName: flingTextLogo),
-                GradientText(
-                  'Banking at the Speed of Life',
-                  gradient: const LinearGradient(
-                    colors: [
-                      Color(0xFFF0F0F0),
-                      Color(0xFF2BBA8F),
-                    ],
-                    begin: Alignment.center,
-                    end: Alignment.bottomRight,
-                  ),
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w400,
-                    color: appColors.white,
-                    fontStyle: FontStyle.italic,
+                AnimatedOpacity(
+                  opacity: svgOpacity.value,
+                  duration: oneSec,
+                  child: SvgAsset(assetName: flingTextLogo),
+                ),
+                AnimatedOpacity(
+                  opacity: txtOpacity.value,
+                  duration: oneSec,
+                  child: GradientText(
+                    'Banking at the Speed of Life',
+                    gradient: const LinearGradient(
+                      colors: [
+                        Color(0xFFF0F0F0),
+                        Color(0xFF2BBA8F),
+                      ],
+                      begin: Alignment.center,
+                      end: Alignment.bottomRight,
+                    ),
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w400,
+                      color: appColors.white,
+                      fontStyle: FontStyle.italic,
+                    ),
                   ),
                 ),
                 hBox50,
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    BounceInAnimation(
-                      onTap: () {},
-                      child: Container(
-                        color: Colors.transparent,
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              'Proceed',
-                              style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w400,
-                                  color: appColors.white),
-                            ),
-                            wBox5,
-                            const Icon(
-                              Icons.arrow_forward,
-                              size: 20,
-                            ),
-                          ],
+                    AnimatedOpacity(
+                      opacity: buttonOpacity.value,
+                      duration: oneSec,
+                      child: BounceInAnimation(
+                        onTap: () {},
+                        child: Container(
+                          color: Colors.transparent,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                'Proceed',
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w400,
+                                    color: appColors.white),
+                              ),
+                              wBox5,
+                              const Icon(
+                                Icons.arrow_forward,
+                                size: 20,
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
