@@ -19,7 +19,7 @@ class SplashScreen extends HookWidget {
       return null;
     }, const []);
     return Scaffold(
-      backgroundColor: appColors.black,
+      backgroundColor: appColors.blackBg,
       body: Image.asset(splashBg),
     );
   }

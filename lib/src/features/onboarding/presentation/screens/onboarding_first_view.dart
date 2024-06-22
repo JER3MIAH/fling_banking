@@ -1,3 +1,5 @@
+import 'package:fling_banking/src/features/navigation/app_navigator.dart';
+import 'package:fling_banking/src/features/navigation/routes.dart';
 import 'package:fling_banking/src/shared/shared.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +30,7 @@ class OnboardingFirstView extends HookWidget {
       return null;
     }, const []);
     return Scaffold(
-      backgroundColor: appColors.black,
+      backgroundColor: appColors.blackBg,
       body: Stack(
         children: [
           Image.asset(splashBg),
@@ -72,7 +74,10 @@ class OnboardingFirstView extends HookWidget {
                       opacity: buttonOpacity.value,
                       duration: oneSec,
                       child: BounceInAnimation(
-                        onTap: () {},
+                        onTap: () {
+                          AppNavigator.pushNamed(
+                              OnboardingRoutes.onboarding2first);
+                        },
                         child: Container(
                           color: Colors.transparent,
                           child: Row(

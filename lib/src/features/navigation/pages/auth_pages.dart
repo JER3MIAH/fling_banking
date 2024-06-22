@@ -1,3 +1,4 @@
+import 'package:fling_banking/src/features/navigation/routes.dart';
 import 'package:get/get.dart';
 
 List<GetPage> authPages = [

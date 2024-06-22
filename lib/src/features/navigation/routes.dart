@@ -8,8 +8,10 @@ class AuthRoutes {
 }
 
 class OnboardingRoutes {
-  static const onboarding1 = '/onboardingFirstScreen';
-  static const onboarding2 = '/onboardingSecondScreen';
+  static const onboarding1 = '/onboarding1Screen';
+  static const onboarding2first = '/onboarding2firstScreen';
+  static const onboarding2second = '/onboarding2secondScreen';
+  static const onboarding2third = '/onboarding2thirdScreen';
 }
 
 class HomeRoutes {
