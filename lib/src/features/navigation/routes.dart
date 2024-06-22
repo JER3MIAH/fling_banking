@@ -3,9 +3,13 @@ class SplashRoute {
 }
 
 class AuthRoutes {
-  static const onboarding = '/onboardingScreen';
   static const login = '/loginScreen';
   static const signUp = '/signUpScreen';
+}
+
+class OnboardingRoutes {
+  static const onboarding1 = '/onboardingFirstScreen';
+  static const onboarding2 = '/onboardingSecondScreen';
 }
 
 class HomeRoutes {

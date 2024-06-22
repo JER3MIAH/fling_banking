@@ -1,3 +1,4 @@
+import 'package:fling_banking/src/features/navigation/pages/onboarding_pages.dart';
 import 'package:fling_banking/src/features/navigation/routes.dart';
 import 'package:fling_banking/src/features/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +20,7 @@ class AppPages {
       transition: Transition.fade,
       transitionDuration: const Duration(milliseconds: 500),
     ),
+    ...onboardingPages,
     ...authPages,
     ...homePages,
   ];
