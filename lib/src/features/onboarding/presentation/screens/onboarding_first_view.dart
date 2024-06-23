@@ -1,9 +1,7 @@
 import 'package:fling_banking/src/features/navigation/app_navigator.dart';
 import 'package:fling_banking/src/features/navigation/routes.dart';
 import 'package:fling_banking/src/shared/shared.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
 class OnboardingFirstView extends HookWidget {

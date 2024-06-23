@@ -1,7 +1,3 @@
-class SplashRoute {
-  static const splash = '/splashScreen';
-}
-
 class AuthRoutes {
   static const login = '/loginScreen';
   static const signUp = '/signUpScreen';
