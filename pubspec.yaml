@@ -19,7 +19,6 @@ dependencies:
   flutter_hooks: ^0.20.5
   flutter_svg: ^2.0.10+1
   lottie: ^3.1.2
-  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
@@ -49,7 +48,10 @@ flutter:
     - assets/pngs/
     - assets/svgs/
 
-  # fonts:
-  #   - family: Tw Cen MT Std
-  #     fonts:
-  #       - asset: assets/fonts/TwCenMTStd.otf
+  fonts:
+    - family: Poppings
+      fonts:
+        - asset: assets/fonts/Poppins-Bold-Bold.ttf
+        - asset: assets/fonts/Poppins-Bold-Medium.ttf
+        - asset: assets/fonts/Poppins-Bold-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold-SemiBold.ttf
