@@ -1,6 +1,11 @@
 class AuthRoutes {
   static const login = '/loginScreen';
-  static const signUp = '/signUpScreen';
+  static const selectAccountTpe = '/selectAccountTpeScreen';
+  static const viewSignUpSteps = '/viewSignUpStepsScreen';
+  static const signUpStep1 = '/signUpStep1Screen';
+  static const signUpStep2 = '/signUpStep2Screen';
+  static const signUpStep3 = '/selectAccountTpeScreen';
+  static const signUpStep4 = '/selectAccountTpeScreen';
 }
 
 class OnboardingRoutes {

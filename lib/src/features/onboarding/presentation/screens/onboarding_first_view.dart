@@ -76,26 +76,7 @@ class OnboardingFirstView extends HookWidget {
                           AppNavigator.pushNamed(
                               OnboardingRoutes.onboarding2first);
                         },
-                        child: Container(
-                          color: Colors.transparent,
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(
-                                'Proceed',
-                                style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w400,
-                                    color: appColors.white),
-                              ),
-                              wBox5,
-                              const Icon(
-                                Icons.arrow_forward,
-                                size: 20,
-                              ),
-                            ],
-                          ),
-                        ),
+                        child: proceedWidget(),
                       ),
                     ),
                   ],
@@ -108,6 +89,29 @@ class OnboardingFirstView extends HookWidget {
       ),
     );
   }
+}
+
+Widget proceedWidget({double fontSize = 16}) {
+  return Container(
+    color: Colors.transparent,
+    child: Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          'Proceed',
+          style: TextStyle(
+              fontSize: fontSize,
+              fontWeight: FontWeight.w400,
+              color: appColors.white),
+        ),
+        wBox5,
+        const Icon(
+          Icons.arrow_forward,
+          size: 20,
+        ),
+      ],
+    ),
+  );
 }
 
 class GradientText extends StatelessWidget {

@@ -1,3 +1,5 @@
+import 'package:fling_banking/src/features/navigation/app_navigator.dart';
+import 'package:fling_banking/src/features/navigation/routes.dart';
 import 'package:fling_banking/src/shared/shared.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -10,7 +12,7 @@ class LoginScreen extends HookWidget {
     final usernameController = useTextEditingController();
     final passwordController = useTextEditingController();
 
-    final isPasswordObscure = useState<bool>(false);
+    final isPasswordObscure = useState<bool>(true);
 
     return Scaffold(
       backgroundColor: appColors.blackBg,
@@ -86,7 +88,9 @@ class LoginScreen extends HookWidget {
             children: [
               const AppText(text: 'Want to bank with Fling? '),
               BounceInAnimation(
-                onTap: () {},
+                onTap: () {
+                  AppNavigator.pushNamed(AuthRoutes.selectAccountTpe);
+                },
                 child: AppText(
                   text: 'Create account',
                   color: appColors.green,

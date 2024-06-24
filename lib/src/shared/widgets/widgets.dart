@@ -10,3 +10,4 @@ export 'app_animated_column.dart';
 export 'app_text.dart';
 export 'app_textfield.dart';
 export 'app_checkbox.dart';
+export 'back_and_title_widget.dart';
