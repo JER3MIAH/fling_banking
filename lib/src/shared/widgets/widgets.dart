@@ -9,3 +9,4 @@ export 'app_column.dart';
 export 'app_animated_column.dart';
 export 'app_text.dart';
 export 'app_textfield.dart';
+export 'app_checkbox.dart';

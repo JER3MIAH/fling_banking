@@ -9,6 +9,7 @@ final String secondOnbImage = 'secondOnbImage'.svg;
 final String thirdOnbImage = 'thirdOnbImage'.svg;
 final String arrowProgress1 = 'arrowProgress1'.svg;
 final String arrowProgress2 = 'arrowProgress2'.svg;
+final String fingerprintIcon = 'fingerprintIcon'.svg;
 
 
 // extensions
