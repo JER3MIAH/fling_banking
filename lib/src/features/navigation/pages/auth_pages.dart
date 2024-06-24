@@ -18,31 +18,31 @@ List<GetPage> authPages = [
   GetPage(
     name: AuthRoutes.viewSignUpSteps,
     page: () => const ViewSignUpStepsScreen(),
-    transition: Transition.rightToLeft,
+    transition: Transition.rightToLeftWithFade,
     transitionDuration: const Duration(milliseconds: 500),
   ),
   GetPage(
     name: AuthRoutes.signUpStep1,
     page: () => const SignupStep1Screen(),
-    transition: Transition.rightToLeft,
+    transition: Transition.rightToLeftWithFade,
     transitionDuration: const Duration(milliseconds: 500),
   ),
   GetPage(
     name: AuthRoutes.signUpStep2,
     page: () => const SignupStep2Screen(),
-    transition: Transition.rightToLeft,
+    transition: Transition.rightToLeftWithFade,
     transitionDuration: const Duration(milliseconds: 500),
   ),
   GetPage(
     name: AuthRoutes.signUpStep3,
     page: () => const SignupStep3Screen(),
-    transition: Transition.rightToLeft,
+    transition: Transition.rightToLeftWithFade,
     transitionDuration: const Duration(milliseconds: 500),
   ),
   GetPage(
     name: AuthRoutes.signUpStep4,
     page: () => const SignupStep4Screen(),
-    transition: Transition.rightToLeft,
+    transition: Transition.rightToLeftWithFade,
     transitionDuration: const Duration(milliseconds: 500),
   ),
 ];
