@@ -8,4 +8,5 @@ class AppColors {
   Color black = const Color(0xFF000000);
   Color elevatedSurface = const Color(0xFF2C2B2B);
   Color green = const Color(0xFF2BBA8F);
+  Color grey = const Color(0xFF797676);
 }

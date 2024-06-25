@@ -10,6 +10,9 @@ final String thirdOnbImage = 'thirdOnbImage'.svg;
 final String arrowProgress1 = 'arrowProgress1'.svg;
 final String arrowProgress2 = 'arrowProgress2'.svg;
 final String fingerprintIcon = 'fingerprintIcon'.svg;
+final String uploadCloud = 'uploadCloud'.svg;
+final String cameraIcon = 'cameraIcon'.svg;
+final String calendarIcon = 'calendarIcon'.svg;
 
 
 // extensions

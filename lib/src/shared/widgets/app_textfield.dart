@@ -7,6 +7,7 @@ class AppTextField extends StatelessWidget {
   final String labelText;
   final Widget? suffixIcon;
   final bool isObscure;
+  final bool readOnly;
   const AppTextField({
     super.key,
     required this.controller,
@@ -14,6 +15,7 @@ class AppTextField extends StatelessWidget {
     this.validator,
     this.suffixIcon,
     this.isObscure = false,
+    this.readOnly = false,
   });
 
   @override
@@ -25,11 +27,14 @@ class AppTextField extends StatelessWidget {
           controller: controller,
           validator: validator,
           obscureText: isObscure,
+          readOnly: readOnly,
           decoration: InputDecoration(
             labelText: labelText,
-            floatingLabelStyle: TextStyle(color: appColors.white),
+            floatingLabelStyle: TextStyle(color: appColors.grey),
             focusedBorder: _buildInbutBorder(appColors.green),
-            border: _buildInbutBorder(appColors.white),
+            border: _buildInbutBorder(appColors.grey),
+            enabledBorder: _buildInbutBorder(appColors.grey),
+            disabledBorder: _buildInbutBorder(appColors.grey),
             suffixIcon: suffixIcon,
           ),
         ),
@@ -42,6 +47,7 @@ class AppTextField extends StatelessWidget {
       borderRadius: BorderRadius.circular(12),
       borderSide: BorderSide(
         color: bColor,
+        width: .9,
       ),
     );
   }

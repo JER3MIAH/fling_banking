@@ -80,7 +80,9 @@ class LoginScreen extends HookWidget {
           hBox50,
           AppButton(
             title: 'Login',
-            onTap: () {},
+            onTap: () {
+              AppNavigator.pushNamed(HomeRoutes.home);
+            },
           ),
           hBox30,
           Row(
