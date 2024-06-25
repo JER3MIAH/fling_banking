@@ -1,6 +1,11 @@
 const String baseSvgPath = 'assets/svgs/';
 const String basePngPath = 'assets/pngs/';
 
+final String dashboard = 'dashboard'.svg;
+final String investment = 'investment'.svg;
+final String learn = 'learn'.svg;
+final String profile = 'profile'.svg;
+final String services = 'services'.svg;
 
 final String splashBg = 'splash-bg'.png;
 final String flingTextLogo = 'flingTextLogo'.svg;
