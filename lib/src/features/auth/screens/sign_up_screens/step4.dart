@@ -56,6 +56,7 @@ class SignupStep4Screen extends HookWidget {
               AppNavigator.pushNamed(HomeRoutes.home);
             },
           ),
+          hBox30,
         ],
       ),
     );
