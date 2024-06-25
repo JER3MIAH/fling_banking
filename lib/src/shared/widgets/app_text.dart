@@ -37,6 +37,7 @@ class AppText extends StatelessWidget {
             color: color ?? appColors.white,
             height: height,
             decoration: decoration,
+            overflow: TextOverflow.ellipsis,
           ),
         ),
       ],

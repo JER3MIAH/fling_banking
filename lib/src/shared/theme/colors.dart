@@ -9,4 +9,5 @@ class AppColors {
   Color elevatedSurface = const Color(0xFF2C2B2B);
   Color green = const Color(0xFF2BBA8F);
   Color grey = const Color(0xFF797676);
+  Color error = const Color(0xFFE77777);
 }

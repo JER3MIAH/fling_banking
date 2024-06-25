@@ -30,7 +30,7 @@ class HomeScreen extends HookWidget {
       bottomNavigationBar: SizedBox(
         height: 81,
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(32),
+          borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
           child: BottomNavigationBar(
             currentIndex: selectedIndex.value,
             onTap: (value) {
