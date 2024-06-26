@@ -39,6 +39,14 @@ final String toolsIcon = 'toolsIcon'.svg;
 
 //?
 final String quickLearn = 'quickLearn'.svg;
+final String notificationBell = 'notificationBell'.svg;
+final String changePassword = 'changePassword'.svg;
+final String createPin = 'createPin'.svg;
+final String limitManagement = 'limitManagement'.svg;
+final String bioLogin = 'bioLogin'.svg;
+final String logoutIcon = 'logoutIcon'.svg;
+final String onlineSupport = 'onlineSupport'.svg;
+
 //?-------------------------------------------------
 
 final String splashBg = 'splash-bg'.png;
@@ -52,7 +60,6 @@ final String fingerprintIcon = 'fingerprintIcon'.svg;
 final String uploadCloud = 'uploadCloud'.svg;
 final String cameraIcon = 'cameraIcon'.svg;
 final String calendarIcon = 'calendarIcon'.svg;
-
 
 // extensions
 extension ImageExtension on String {

@@ -1,6 +1,5 @@
 import 'package:fling_banking/src/shared/shared.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class InvestmentScreen extends StatelessWidget {
   const InvestmentScreen({super.key});
@@ -129,7 +128,7 @@ class InvestmentScreen extends StatelessWidget {
         children: [
           SvgAsset(assetName: toolsIcon),
           hBox5,
-          Text(
+          const Text(
             'Retirement Calculator',
             textAlign: TextAlign.center,
           ),

@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 
 class AppTile extends StatelessWidget {
   final String title;
+  final String? leadingIcon;
   final VoidCallback onTap;
   const AppTile({
     super.key,
     required this.title,
     required this.onTap,
+    this.leadingIcon,
   });
 
   @override
@@ -29,6 +31,7 @@ class AppTile extends StatelessWidget {
           ),
         ),
         contentPadding: const EdgeInsets.symmetric(horizontal: 10),
+        leading: leadingIcon == null ? null : SvgAsset(assetName: leadingIcon!),
         trailing: const Icon(
           Icons.arrow_forward_ios,
           size: 15,
