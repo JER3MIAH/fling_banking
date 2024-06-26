@@ -28,6 +28,7 @@ class DashboardScreen extends HookWidget {
                 ...dbActions.map((action) => DashboardActionWidget(
                       text: action.title,
                       icon: action.icon,
+                      onTap: action.onTap,
                     )),
               ],
             ),

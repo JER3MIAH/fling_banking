@@ -2,10 +2,26 @@ import 'package:fling_banking/src/features/home/data/data.dart';
 import 'package:fling_banking/src/shared/shared.dart';
 
 List<DashboardAction> dbActions = [
-  DashboardAction(title: 'Card', icon: cardIcon),
-  DashboardAction(title: 'Transfer', icon: transferIcon),
-  DashboardAction(title: 'Pay Bills', icon: payBillsIcon),
-  DashboardAction(title: 'Airtime', icon: airtimeIcon),
+  DashboardAction(
+    title: 'Card',
+    icon: cardIcon,
+    onTap: () {},
+  ),
+  DashboardAction(
+    title: 'Transfer',
+    icon: transferIcon,
+    onTap: () {},
+  ),
+  DashboardAction(
+    title: 'Pay Bills',
+    icon: payBillsIcon,
+    onTap: () {},
+  ),
+  DashboardAction(
+    title: 'Airtime',
+    icon: airtimeIcon,
+    onTap: () {},
+  ),
 ];
 
 List<Transaction> transactions = [

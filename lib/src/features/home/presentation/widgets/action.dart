@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 
 class DashboardActionWidget extends StatelessWidget {
   final String text, icon;
+  final VoidCallback onTap;
   const DashboardActionWidget({
     super.key,
     required this.text,
     required this.icon,
+    required this.onTap,
   });
 
   @override
@@ -16,15 +18,18 @@ class DashboardActionWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
-            height: 40,
-            width: 40,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              color: appColors.elevatedSurface,
-              borderRadius: BorderRadius.circular(10),
+          GestureDetector(
+            onTap: onTap,
+            child: Container(
+              height: 40,
+              width: 40,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: appColors.elevatedSurface,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: SvgAsset(assetName: icon),
             ),
-            child: SvgAsset(assetName: icon),
           ),
           AppText(text: text, fontSize: 14),
         ],
