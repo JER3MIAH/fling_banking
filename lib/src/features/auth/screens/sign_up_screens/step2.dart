@@ -17,7 +17,6 @@ class SignupStep2Screen extends HookWidget {
 
     return Scaffold(
       body: AppColumn(
-        shouldScroll: true,
         children: [
           const BackAndTitleWidget(
             title: 'Step 2: Employment Information',

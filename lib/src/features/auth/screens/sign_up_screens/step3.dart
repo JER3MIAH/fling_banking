@@ -16,7 +16,6 @@ class SignupStep3Screen extends HookWidget {
 
     return Scaffold(
       body: AppColumn(
-        shouldScroll: true,
         children: [
           const BackAndTitleWidget(
             title: 'Step 3: Next of kin Section',

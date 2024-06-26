@@ -14,7 +14,6 @@ class SignupStep4Screen extends HookWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: AppColumn(
-        shouldScroll: true,
         children: [
           const BackAndTitleWidget(
             title: 'Step 4: Identification Section',

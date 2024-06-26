@@ -24,6 +24,19 @@ final String moneyOut = 'moneyOut'.svg;
 final String income = 'income'.svg;
 final String expense = 'expense'.svg;
 
+//?Service screen icons
+final String billPayment = 'billPayment'.svg;
+final String airtime = 'airtime'.svg;
+final String transfer = 'transfer'.svg;
+final String cards = 'cards'.svg;
+final String transactionHistory = 'transactionHistory'.svg;
+final String limitTransfers = 'limitTransfers'.svg;
+final String loan = 'loan'.svg;
+final String invest = 'invest'.svg;
+final String analytics = 'analytics'.svg;
+final String toolsIcon = 'toolsIcon'.svg;
+//?-------------------------------------------------
+
 final String splashBg = 'splash-bg'.png;
 final String flingTextLogo = 'flingTextLogo'.svg;
 final String firstOnbImage = 'firstOnbImage'.svg;

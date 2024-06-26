@@ -24,7 +24,6 @@ class SelectAccountTypeScreen extends StatelessWidget {
       body: BlocBuilder<AuthBloc, AuthState>(
         builder: (_, state) {
           return AppColumn(
-            shouldScroll: true,
             children: [
               BackAndTitleWidget(
                 otherWidget: SvgAsset(

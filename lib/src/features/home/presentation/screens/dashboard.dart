@@ -13,7 +13,6 @@ class DashboardScreen extends HookWidget {
 
     return Scaffold(
       body: AppColumn(
-        shouldScroll: true,
         children: [
           hBox10,
           _topInfo(),

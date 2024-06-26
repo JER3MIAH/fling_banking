@@ -25,7 +25,8 @@ class AppText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisSize: isStartAligned ? MainAxisSize.max : MainAxisSize.min,
+      mainAxisSize:
+          isStartAligned || isCentered ? MainAxisSize.max : MainAxisSize.min,
       mainAxisAlignment:
           isCentered ? MainAxisAlignment.center : MainAxisAlignment.start,
       children: [
