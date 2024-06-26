@@ -12,3 +12,4 @@ export 'app_textfield.dart';
 export 'app_checkbox.dart';
 export 'back_and_title_widget.dart';
 export 'app_selection_tile.dart';
+export 'app_tile.dart';
