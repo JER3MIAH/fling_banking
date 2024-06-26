@@ -27,6 +27,9 @@ class ProfileScreen extends StatelessWidget {
               child: GestureDetector(
                 onTap: () {
                   AppNavigator.showBottomSheet(
+                    height: MediaQuery.of(context).size.height * .8,
+                    enableDrag: true,
+                    isDismissible: true,
                     const NotificationDialogContent(),
                   );
                 },

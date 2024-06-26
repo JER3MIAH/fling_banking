@@ -46,6 +46,7 @@ final String limitManagement = 'limitManagement'.svg;
 final String bioLogin = 'bioLogin'.svg;
 final String logoutIcon = 'logoutIcon'.svg;
 final String onlineSupport = 'onlineSupport'.svg;
+final String notifOutline = 'notifOutline'.svg;
 
 //?-------------------------------------------------
 

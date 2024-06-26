@@ -57,7 +57,7 @@ class AppNavigator {
         height: height,
         child: content,
       ),
-      backgroundColor: appColors.white,
+      backgroundColor: appColors.blackBg,
       isScrollControlled: true,
       enableDrag: enableDrag,
       isDismissible: isDismissible,
