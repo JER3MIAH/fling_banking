@@ -37,6 +37,10 @@ final String analytics = 'analytics'.svg;
 final String toolsIcon = 'toolsIcon'.svg;
 //?-------------------------------------------------
 
+//?
+final String quickLearn = 'quickLearn'.svg;
+//?-------------------------------------------------
+
 final String splashBg = 'splash-bg'.png;
 final String flingTextLogo = 'flingTextLogo'.svg;
 final String firstOnbImage = 'firstOnbImage'.svg;

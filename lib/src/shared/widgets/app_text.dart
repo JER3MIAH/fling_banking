@@ -10,6 +10,7 @@ class AppText extends StatelessWidget {
   final Color? color;
   final bool isStartAligned, isCentered;
   final TextDecoration? decoration;
+  final TextAlign? textAlign;
   const AppText({
     super.key,
     required this.text,
@@ -20,6 +21,7 @@ class AppText extends StatelessWidget {
     this.isStartAligned = false,
     this.isCentered = false,
     this.decoration,
+    this.textAlign,
   });
 
   @override
@@ -32,6 +34,7 @@ class AppText extends StatelessWidget {
       children: [
         Text(
           text,
+          textAlign: textAlign,
           style: TextStyle(
             fontSize: fontSize,
             fontWeight: fontWeight,
@@ -39,6 +42,7 @@ class AppText extends StatelessWidget {
             height: height,
             decoration: decoration,
             overflow: TextOverflow.ellipsis,
+            
           ),
         ),
       ],

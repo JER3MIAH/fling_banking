@@ -7,7 +7,7 @@ class DashboradTransactionHistory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return AppAnimatedColumn(
       children: [
         ...transactions.map(
           (transaction) => _transaction(transaction),
