@@ -98,6 +98,7 @@ class InvestmentScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               _buildRetirementCont(),
+              wBox15,
               _buildRetirementCont(),
             ],
           ),
@@ -106,6 +107,7 @@ class InvestmentScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               _buildRetirementCont(),
+              wBox15,
               _buildRetirementCont(),
             ],
           ),
@@ -116,23 +118,25 @@ class InvestmentScreen extends StatelessWidget {
   }
 
   Widget _buildRetirementCont() {
-    return Container(
-      width: 155,
-      height: 128,
-      decoration: BoxDecoration(
-        color: appColors.elevatedSurface,
-        borderRadius: BorderRadius.circular(14.62),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SvgAsset(assetName: toolsIcon),
-          hBox5,
-          const Text(
-            'Retirement Calculator',
-            textAlign: TextAlign.center,
-          ),
-        ],
+    return Expanded(
+      child: Container(
+        // width: 155,
+        height: 128,
+        decoration: BoxDecoration(
+          color: appColors.elevatedSurface,
+          borderRadius: BorderRadius.circular(14.62),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SvgAsset(assetName: toolsIcon),
+            hBox5,
+            const Text(
+              'Retirement\nCalculator',
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
       ),
     );
   }
