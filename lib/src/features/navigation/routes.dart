@@ -17,4 +17,5 @@ class OnboardingRoutes {
 
 class HomeRoutes {
   static const home = '/homeScreen';
+  static const cards = '/cardsScreen';
 }

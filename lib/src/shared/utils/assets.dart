@@ -47,8 +47,12 @@ final String bioLogin = 'bioLogin'.svg;
 final String logoutIcon = 'logoutIcon'.svg;
 final String onlineSupport = 'onlineSupport'.svg;
 final String notifOutline = 'notifOutline'.svg;
-
 //?-------------------------------------------------
+
+final String card = 'card'.svg;
+final String netflix = 'netflix'.svg;
+final String udemy = 'udemy'.svg;
+final String paypal = 'paypal'.svg;
 
 final String splashBg = 'splash-bg'.png;
 final String flingTextLogo = 'flingTextLogo'.svg;

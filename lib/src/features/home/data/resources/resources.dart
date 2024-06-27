@@ -1,11 +1,15 @@
 import 'package:fling_banking/src/features/home/data/data.dart';
+import 'package:fling_banking/src/features/navigation/app_navigator.dart';
+import 'package:fling_banking/src/features/navigation/routes.dart';
 import 'package:fling_banking/src/shared/shared.dart';
 
 List<DashboardAction> dbActions = [
   DashboardAction(
     title: 'Card',
     icon: cardIcon,
-    onTap: () {},
+    onTap: () {
+      AppNavigator.pushNamed(HomeRoutes.cards);
+    },
   ),
   DashboardAction(
     title: 'Transfer',

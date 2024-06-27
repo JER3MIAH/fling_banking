@@ -7,11 +7,13 @@ class BackAndTitleWidget extends StatelessWidget {
   final VoidCallback? onBackPressed;
   final String title;
   final Widget? otherWidget;
+  final Widget? trailingWidget;
   const BackAndTitleWidget({
     super.key,
     this.onBackPressed,
     this.title = '',
     this.otherWidget,
+    this.trailingWidget,
   });
 
   @override
@@ -27,15 +29,18 @@ class BackAndTitleWidget extends StatelessWidget {
         otherWidget ??
             AppText(
               text: title,
+              fontSize: 20,
+              fontWeight: FontWeight.w600,
             ),
         //? Dummy widget to help center the text
-        Visibility(
-          visible: false,
-          maintainAnimation: true,
-          maintainState: true,
-          maintainSize: true,
-          child: AppBackButton(onTap: () {}),
-        ),
+        trailingWidget ??
+            Visibility(
+              visible: false,
+              maintainAnimation: true,
+              maintainState: true,
+              maintainSize: true,
+              child: AppBackButton(onTap: () {}),
+            ),
       ],
     );
   }
