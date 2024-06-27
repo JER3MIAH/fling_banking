@@ -8,6 +8,7 @@ class AppTextField extends StatelessWidget {
   final Widget? suffixIcon;
   final bool isObscure;
   final bool readOnly;
+  final TextInputType? keyboardType;
   const AppTextField({
     super.key,
     required this.controller,
@@ -16,6 +17,7 @@ class AppTextField extends StatelessWidget {
     this.suffixIcon,
     this.isObscure = false,
     this.readOnly = false,
+    this.keyboardType,
   });
 
   @override
@@ -28,6 +30,7 @@ class AppTextField extends StatelessWidget {
           validator: validator,
           obscureText: isObscure,
           readOnly: readOnly,
+          keyboardType: keyboardType,
           decoration: InputDecoration(
             labelText: labelText,
             floatingLabelStyle: TextStyle(color: appColors.grey),

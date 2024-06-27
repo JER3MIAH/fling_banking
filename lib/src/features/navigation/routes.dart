@@ -18,4 +18,8 @@ class OnboardingRoutes {
 class HomeRoutes {
   static const home = '/homeScreen';
   static const cards = '/cardsScreen';
+  static const transfer = '/transferScreen';
+  static const transferProcessing = '/transferProcessingScreen';
+  static const confirmTransfer = '/confirmTransferScreen';
+  static const transferSuccessful = '/transferSuccessfulScreen';
 }

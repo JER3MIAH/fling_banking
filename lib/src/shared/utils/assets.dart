@@ -53,6 +53,8 @@ final String card = 'card'.svg;
 final String netflix = 'netflix'.svg;
 final String udemy = 'udemy'.svg;
 final String paypal = 'paypal'.svg;
+final String successIcon = 'success-icon'.svg;
+final String downloadIcon = 'download-icon'.svg;
 
 final String splashBg = 'splash-bg'.png;
 final String flingTextLogo = 'flingTextLogo'.svg;

@@ -1,7 +1,6 @@
 import 'package:fling_banking/src/features/home/presentation/widgets/widgets.dart';
 import 'package:fling_banking/src/shared/shared.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
 class CardsScreen extends HookWidget {

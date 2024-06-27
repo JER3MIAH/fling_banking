@@ -35,6 +35,11 @@ class AppNavigator {
     Get.back();
   }
 
+  //? Use to pop until a condition is met
+  static void popUntil(String name) {
+    Get.until((route) => route.settings.name == name);
+  }
+
   //? Use to pop dialog if shown
   static void popDialog() {
     if (Get.isDialogOpen!) {

@@ -14,7 +14,9 @@ List<DashboardAction> dbActions = [
   DashboardAction(
     title: 'Transfer',
     icon: transferIcon,
-    onTap: () {},
+    onTap: () {
+      AppNavigator.pushNamed(HomeRoutes.transfer);
+    },
   ),
   DashboardAction(
     title: 'Pay Bills',

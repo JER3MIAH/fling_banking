@@ -36,7 +36,7 @@ class NotificationDialogContent extends StatelessWidget {
               wBox10,
               Expanded(
                 child: Text(
-                  'Introducing  Fling’s virtual dollar card which allows users to make international pa...',
+                  'Introducing  Fling’s virtual dollar card which allows users to make international payments',
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w400,
