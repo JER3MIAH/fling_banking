@@ -47,6 +47,12 @@ class LearnTab extends StatelessWidget {
             decoration: BoxDecoration(
               color: appColors.elevatedSurface,
             ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SvgAsset(assetName: learningCards),
+              ],
+            ),
           ),
           _endArrowTitle('Next Topic'),
           const AppText(

@@ -55,6 +55,12 @@ final String udemy = 'udemy'.svg;
 final String paypal = 'paypal'.svg;
 final String successIcon = 'success-icon'.svg;
 final String downloadIcon = 'download-icon'.svg;
+final String learningCards = 'learningCards'.svg;
+
+final String glo = 'glo'.svg;
+final String mtn = 'mtn'.svg;
+final String airtel = 'airtel'.svg;
+final String mobile9 = '9mobile'.svg;
 
 final String splashBg = 'splash-bg'.png;
 final String flingTextLogo = 'flingTextLogo'.svg;

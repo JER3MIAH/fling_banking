@@ -1,4 +1,5 @@
 import 'package:fling_banking/src/features/home/data/data.dart';
+import 'package:fling_banking/src/features/home/data/models/biller.dart';
 import 'package:fling_banking/src/features/navigation/app_navigator.dart';
 import 'package:fling_banking/src/features/navigation/routes.dart';
 import 'package:fling_banking/src/shared/shared.dart';
@@ -21,12 +22,16 @@ List<DashboardAction> dbActions = [
   DashboardAction(
     title: 'Pay Bills',
     icon: payBillsIcon,
-    onTap: () {},
+    onTap: () {
+      AppNavigator.pushNamed(HomeRoutes.billPayment);
+    },
   ),
   DashboardAction(
     title: 'Airtime',
     icon: airtimeIcon,
-    onTap: () {},
+    onTap: () {
+      AppNavigator.pushNamed(HomeRoutes.airtime);
+    },
   ),
 ];
 
@@ -73,4 +78,11 @@ List<Transaction> transactions = [
     amount: 1500,
     isIncome: false,
   ),
+];
+
+List<Biller> billerList = [
+  Biller(title: 'MTN', logo: mtn),
+  Biller(title: 'Glo', logo: glo),
+  Biller(title: 'Airtel', logo: airtel),
+  Biller(title: '9mobile', logo: mobile9),
 ];

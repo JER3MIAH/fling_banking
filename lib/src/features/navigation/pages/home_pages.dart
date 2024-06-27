@@ -1,3 +1,6 @@
+import 'package:fling_banking/src/features/home/presentation/screens/bills/airtime.dart';
+import 'package:fling_banking/src/features/home/presentation/screens/bills/bill_payment.dart';
+import 'package:fling_banking/src/features/home/presentation/screens/bills/billers.dart';
 import 'package:fling_banking/src/features/home/presentation/screens/cards_screen.dart';
 import 'package:fling_banking/src/features/home/presentation/screens/home_screen.dart';
 import 'package:fling_banking/src/features/home/presentation/screens/transfer/confirm_transfer_screen.dart';
@@ -41,6 +44,24 @@ List<GetPage> homePages = [
   GetPage(
     name: HomeRoutes.transferSuccessful,
     page: () => const TransferSuccessfulScreen(),
+    transition: Transition.native,
+    transitionDuration: const Duration(milliseconds: 500),
+  ),
+  GetPage(
+    name: HomeRoutes.billPayment,
+    page: () => const BillPaymentScreen(),
+    transition: Transition.native,
+    transitionDuration: const Duration(milliseconds: 500),
+  ),
+  GetPage(
+    name: HomeRoutes.billers,
+    page: () => const BillersScreen(),
+    transition: Transition.native,
+    transitionDuration: const Duration(milliseconds: 500),
+  ),
+  GetPage(
+    name: HomeRoutes.airtime,
+    page: () => const AirtimeScreen(),
     transition: Transition.native,
     transitionDuration: const Duration(milliseconds: 500),
   ),

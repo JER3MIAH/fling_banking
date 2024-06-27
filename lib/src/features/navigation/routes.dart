@@ -22,4 +22,7 @@ class HomeRoutes {
   static const transferProcessing = '/transferProcessingScreen';
   static const confirmTransfer = '/confirmTransferScreen';
   static const transferSuccessful = '/transferSuccessfulScreen';
+  static const billPayment = '/billPaymentScreen';
+  static const billers = '/billersScreen';
+  static const airtime = '/airtimeScreen';
 }
