@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:fling_banking/src/shared/shared.dart';
 import 'package:flutter/material.dart';
 
@@ -49,6 +50,77 @@ class DashboardOverview extends StatelessWidget {
           isStartAligned: true,
         ),
         hBox15,
+        Center(
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              SizedBox(
+                width: 186,
+                height: 186,
+                child: PieChart(
+                  PieChartData(
+                    sections: [
+                      PieChartSectionData(
+                        title: 'Expense',
+                        showTitle: false,
+                        color: appColors.error,
+                        radius: 15,
+                      ),
+                      PieChartSectionData(
+                        title: 'Income',
+                        showTitle: false,
+                        color: appColors.green,
+                        radius: 15,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  _buildGraphDetail(true),
+                  hBox10,
+                  _buildGraphDetail(false)
+                ],
+              ),
+            ],
+          ),
+        ),
+        hBox15,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 16,
+              width: 16,
+              child: FittedBox(
+                child: Icon(Icons.arrow_upward, color: appColors.green),
+              ),
+            ),
+            AppText(text: '40% ', color: appColors.green),
+            AppText(text: 'vs last month', color: appColors.grey),
+          ],
+        ),
+        hBox15,
+      ],
+    );
+  }
+
+  Row _buildGraphDetail(bool isExpense) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          width: 8,
+          height: 8,
+          decoration: BoxDecoration(
+            color: isExpense ? appColors.error : appColors.green,
+            shape: BoxShape.circle,
+          ),
+        ),
+        wBox7,
+        AppText(text: isExpense ? 'Expense' : 'Income'),
       ],
     );
   }
