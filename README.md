@@ -1,6 +1,6 @@
 # Fling Banking App
 
-A fully responsive todo app
+An App that addresses the financial needs of bank users with improved financial management tools.
 
 ## Table of contents
 
@@ -8,16 +8,13 @@ A fully responsive todo app
 - [Built with](#built-with)
 - [Acknowledgements](#acknowledgements)
 
-
 ### Screenshots
 
-<img src="./assets/screenshots/screenshot1.jpg" width="200" alt="onboarding" />  <img src="./assets/screenshots/screenshot2.jpg" width="200" alt="onboarding" />  <img src="./assets/screenshots/screenshot3.jpg" width="200" alt="onboarding" /> 
+<img src="./assets/screenshots/screenshot1.jpg" width="200" alt="onboarding" /> <img src="./assets/screenshots/screenshot2.jpg" width="200" alt="onboarding" /> <img src="./assets/screenshots/screenshot3.jpg" width="200" alt="onboarding" />
 
-<img src="./assets/screenshots/screenshot4.jpg" width="200" alt="onboarding" />  <img src="./assets/screenshots/screenshot5.jpg" width="200" alt="onboarding" />
+<img src="./assets/screenshots/screenshot4.jpg" width="200" alt="onboarding" /> <img src="./assets/screenshots/screenshot5.jpg" width="200" alt="onboarding" /> <img src="./assets/screenshots/screenshot6.jpg" width="200" alt="dashboard" />
 
-<img src="./assets/screenshots/screenshot6.jpg" width="200" alt="dashboard" />  <img src="./assets/screenshots/screenshot7.jpg" width="200" alt="dashboard" />  <img src="./assets/screenshots/screenshot8.jpg" width="200" alt="services" />
-
-<img src="./assets/screenshots/screenshot9.jpg" width="200" alt="dashboard" />  <img src="./assets/screenshots/screenshot10.jpg" width="200" alt="dashboard" />  <img src="./assets/screenshots/screenshot11.jpg" width="200" alt="services" />
+<img src="./assets/screenshots/screenshot7.jpg" width="200" alt="dashboard" /> <img src="./assets/screenshots/screenshot8.jpg" width="200" alt="services" /> <img src="./assets/screenshots/screenshot11.jpg" width="200" alt="profile" />
 
 ### Built with
 
@@ -27,7 +24,7 @@ A fully responsive todo app
 - GetX for Navigation
 
 ### Acknowledgements
-- **Design**: The design for this app was created by [Kindness](https://kindness-portfolio.webflow.io/). 
+
+- **Design**: The design for this app was created by [Kindness](https://kindness-portfolio.webflow.io/).
 
 - **Development**: The app was developed by [Jeremiah](https://github.com/JER3MIAH).
-
