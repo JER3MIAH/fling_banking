@@ -19,6 +19,7 @@ class SignupStep1Screen extends HookWidget {
         children: [
           const BackAndTitleWidget(
             title: 'Step 1: Personal Information',
+            isTitleLarge: false,
           ),
           hBox30,
           buildProgressWIdget(SignUpProgress.first),

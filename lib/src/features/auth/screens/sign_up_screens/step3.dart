@@ -19,6 +19,7 @@ class SignupStep3Screen extends HookWidget {
         children: [
           const BackAndTitleWidget(
             title: 'Step 3: Next of kin Section',
+             isTitleLarge: false,
           ),
           hBox30,
           buildProgressWIdget(SignUpProgress.third),

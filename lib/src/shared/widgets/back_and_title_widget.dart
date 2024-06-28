@@ -6,6 +6,7 @@ import 'package:flutter/widgets.dart';
 class BackAndTitleWidget extends StatelessWidget {
   final VoidCallback? onBackPressed;
   final String title;
+  final bool isTitleLarge;
   final Widget? otherWidget;
   final Widget? trailingWidget;
   const BackAndTitleWidget({
@@ -13,6 +14,7 @@ class BackAndTitleWidget extends StatelessWidget {
     this.onBackPressed,
     this.title = '',
     this.otherWidget,
+    this.isTitleLarge = true,
     this.trailingWidget,
   });
 
@@ -29,7 +31,7 @@ class BackAndTitleWidget extends StatelessWidget {
         otherWidget ??
             AppText(
               text: title,
-              fontSize: 20,
+              fontSize: isTitleLarge ? 20 : 14,
               fontWeight: FontWeight.w600,
             ),
         //? Dummy widget to help center the text

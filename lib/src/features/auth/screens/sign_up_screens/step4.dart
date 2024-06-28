@@ -17,6 +17,7 @@ class SignupStep4Screen extends HookWidget {
         children: [
           const BackAndTitleWidget(
             title: 'Step 4: Identification Section',
+             isTitleLarge: false,
           ),
           hBox30,
           buildProgressWIdget(SignUpProgress.last),

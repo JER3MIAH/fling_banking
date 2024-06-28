@@ -20,6 +20,7 @@ class SignupStep2Screen extends HookWidget {
         children: [
           const BackAndTitleWidget(
             title: 'Step 2: Employment Information',
+             isTitleLarge: false,
           ),
           hBox30,
           buildProgressWIdget(SignUpProgress.secong),
