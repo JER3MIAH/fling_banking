@@ -24,7 +24,11 @@ class LearnTab extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 hBox15,
-                SvgAsset(assetName: quickLearn),
+                Container(
+                  width: double.infinity,
+                  color: appColors.elevatedSurface,
+                  child: SvgAsset(assetName: quickLearn),
+                ),
                 hBox20,
                 const AppText(
                   text: 'Choose topic to start',
@@ -70,6 +74,7 @@ class LearnTab extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     _buildVideo('Type of Accounts'),
+                    wBox15,
                     _buildVideo('Budgeting: The good'),
                   ],
                 ),
@@ -134,30 +139,32 @@ class LearnTab extends StatelessWidget {
   }
 
   Widget _buildVideo(String text) {
-    return Container(
-      height: 120,
-      width: 155,
-      padding: const EdgeInsets.all(10),
-      decoration: BoxDecoration(
-        color: appColors.elevatedSurface,
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Container(
-            height: 75,
-            width: double.infinity,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: appColors.grey,
+    return Expanded(
+      child: Container(
+        height: 120,
+        // width: 155,
+        padding: const EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          color: appColors.elevatedSurface,
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Container(
+              height: 75,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: appColors.grey,
+              ),
             ),
-          ),
-          AppText(
-            text: text,
-            fontSize: 12,
-          ),
-        ],
+            AppText(
+              text: text,
+              fontSize: 12,
+            ),
+          ],
+        ),
       ),
     );
   }

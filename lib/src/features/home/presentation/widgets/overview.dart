@@ -27,6 +27,7 @@ class DashboardOverview extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             _overViewBox(topText: 'Total Transactions', bottomText: '24'),
+            wBox20,
             _overViewBox(topText: 'Total Amount', bottomText: 'NGN 50,000'),
           ],
         ),
@@ -38,6 +39,7 @@ class DashboardOverview extends StatelessWidget {
                 topText: 'Expense',
                 bottomText: 'NGN 30,000',
                 color: appColors.error.withOpacity(.3)),
+            wBox20,
             _overViewBox(
                 topText: 'Income',
                 bottomText: 'NGN 20,000',
@@ -130,45 +132,47 @@ class DashboardOverview extends StatelessWidget {
     required String topText,
     required String bottomText,
   }) {
-    return Container(
-      height: 84,
-      width: 152,
-      alignment: Alignment.center,
-      padding: const EdgeInsets.symmetric(vertical: 15),
-      decoration: BoxDecoration(
-        color: color ?? appColors.elevatedSurface,
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              topText == 'Income'
-                  ? Padding(
-                      padding: const EdgeInsets.only(right: 10),
-                      child: SvgAsset(assetName: income),
-                    )
-                  : topText == 'Expense'
-                      ? Padding(
-                          padding: const EdgeInsets.only(right: 10),
-                          child: SvgAsset(assetName: expense),
-                        )
-                      : const SizedBox.shrink(),
-              AppText(
-                text:
-                    '$topText${topText == 'Income' ? '      ' : topText == 'Expense' ? '      ' : ''}',
-                fontSize: 12,
-                fontWeight: FontWeight.w500,
-              ),
-            ],
-          ),
-          AppText(
-            text: bottomText,
-            fontSize: 16,
-          ),
-        ],
+    return Expanded(
+      child: Container(
+        height: 88,
+        // width: 152,
+        alignment: Alignment.center,
+        padding: const EdgeInsets.symmetric(vertical: 15),
+        decoration: BoxDecoration(
+          color: color ?? appColors.elevatedSurface,
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                topText == 'Income'
+                    ? Padding(
+                        padding: const EdgeInsets.only(right: 10),
+                        child: SvgAsset(assetName: income),
+                      )
+                    : topText == 'Expense'
+                        ? Padding(
+                            padding: const EdgeInsets.only(right: 10),
+                            child: SvgAsset(assetName: expense),
+                          )
+                        : const SizedBox.shrink(),
+                AppText(
+                  text:
+                      '$topText${topText == 'Income' ? '      ' : topText == 'Expense' ? '      ' : ''}',
+                  fontSize: 12,
+                  fontWeight: FontWeight.w500,
+                ),
+              ],
+            ),
+            AppText(
+              text: bottomText,
+              fontSize: 16,
+            ),
+          ],
+        ),
       ),
     );
   }
