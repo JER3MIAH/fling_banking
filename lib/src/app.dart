@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       ],
       child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Portfolio Web App',
+        title: 'Fling Banking App',
         theme: appTheme,
         initialRoute: AppPages.initial,
         getPages: AppPages.routes,
